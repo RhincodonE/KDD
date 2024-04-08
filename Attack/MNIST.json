@@ -1,0 +1,11 @@
+{
+  "dataset":{
+    "name":"LFW",
+    "img_path":"./Data_train/LFW/train/imgs",
+    "train_file_path":"./Data_train/LFW/train/label.txt",
+    "test_file_path":"./Data_train/LFW/test/label.txt",
+    "model_name":"GAN",
+    "n_classes":10,
+    "gpus":"0"
+  }
+}
