@@ -1,0 +1,20 @@
+data:
+  gpu: 0
+  num_workers: 3
+  train_dataset: ./tmp/cifar_train.beton
+  test_dataset: ./tmp/cifar_test.beton
+  model_folder: ./model
+
+
+training:
+  batch_size: 512
+  epochs: 24
+  lr: 0.5
+  momentum: 0.9
+  lr_peak_epoch: 5
+  momentum: 0.9
+  weight_decay: 5e-4
+  label_smoothing: 0.1
+  lr_tta: true
+  num_workers: 3
+  model_save_path: ./model/model_cifar.pth
