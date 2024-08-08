@@ -1,0 +1,14 @@
+data:
+  gpu: 1
+  num_workers: 3
+  model_folder: /users/home/ygu27/cifar/models/ #your absolute addr to store the experiment models, not shadow models
+  attacking_results_folder: ./data/results/
+  dataset_folder: /users/home/ygu27/cifar/tmp/ #your absolute addr to store the in, out dataset and index files
+  statistic_in: ./data/static/in_statistics.csv
+  statistic_out: ./data/static/out_statistics.csv
+  unlearning_index: /users/home/ygu27/cifar/MIA/data/privacy_score/top_index_0.csv
+  unlearning: False
+
+
+training:
+  batch_size: 512

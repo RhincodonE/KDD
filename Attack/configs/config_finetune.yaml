@@ -1,0 +1,25 @@
+data:
+  gpu: 0
+  num_workers: 3
+  in_dataset: /users/home/ygu27/cifar/tmp_f/cifar_in.beton
+  finetune_dataset: /users/home/ygu27/cifar/tmp_f/finetune.beton
+  val_dataset: /users/home/ygu27/cifar/cifar_test.beton
+  out_dataset: /users/home/ygu27/cifar/cifar_out.beton
+  out_dataset_index: /users/homeygu27/cifar/tmp_f/out.npy
+  in_dataset_index: /users/homeygu27/cifar/tmp_f/in.npy
+  model_folder: /users/home/ygu27/cifar/models_f
+  unlearning_index: /users/home/ygu27/cifar/MIA/data/privacy_score/top_index.csv
+  unlearning: True
+
+training:
+  batch_size: 20
+  epochs: 3
+  lr: 0.01
+  momentum: 0.9
+  lr_peak_epoch: 5
+  momentum: 0.9
+  weight_decay: 5e-4
+  label_smoothing: 0.1
+  lr_tta: true
+  num_workers: 3
+  in_model_save_path: ./models_f/model_in.pth

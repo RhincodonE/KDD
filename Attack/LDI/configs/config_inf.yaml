@@ -1,0 +1,9 @@
+data:
+  index_folder: /users/home/ygu27/cifar/tmp/
+  statistic_in: ./data/static/in_statistics.csv
+  statistic_out: ./data/static/out_statistics.csv
+  gpu: 0
+
+
+training:
+  batch_size: 512

@@ -1,0 +1,24 @@
+data:
+  gpu: 0
+  num_workers: 3
+  in_dataset: ./tmp_u/cifar_in.beton
+  val_dataset: ./tmp_u/cifar_test.beton
+  out_dataset: ./tmp_u/cifar_out.beton
+  out_dataset_index: ./tmp_u/out.npy
+  in_dataset_index: ./tmp_u/in.npy
+  model_folder: ./models_u
+  unlearning_index: /users/home/ygu27/cifar/MIA/data/privacy_score/top_index.csv
+  unlearning: True
+
+training:
+  batch_size: 512
+  epochs: 24
+  lr: 0.5
+  momentum: 0.9
+  lr_peak_epoch: 5
+  momentum: 0.9
+  weight_decay: 5e-4
+  label_smoothing: 0.1
+  lr_tta: true
+  num_workers: 3
+  in_model_save_path: ./models_u/model_in.pth
